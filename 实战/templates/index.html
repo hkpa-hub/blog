@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- Highlight.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/default.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">博客</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ai-assistant">AI助手</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">关于我</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="btn btn-outline-primary">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main>
+        
+        
+        <!-- 个人介绍板块 -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="assets/avatar.jpg" alt="个人照片" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>你好，我是XXX</h1>
+                        <p class="lead">全栈开发工程师 / AI爱好者</p>
+                        <div class="skill-tags">
+                            <!-- 技能标签将通过JavaScript动态添加 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 照片轮播区 -->
+        <section class="swiper-section">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- 轮播图片将通过JavaScript动态添加 -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- 博客文章区 -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <h2>最新博客</h2>
+                <div class="blog-filters">
+                    <!-- 分类筛选将通过JavaScript动态添加 -->
+                </div>
+                <div class="row blog-grid">
+                    <!-- 博客卡片将通过JavaScript动态添加 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- AI助手对话界面 -->
+        <section id="ai-assistant" class="ai-chat-section">
+            <div class="container">
+                <div class="chat-container">
+                    <div class="chat-messages">
+                        <!-- 消息将通过JavaScript动态添加 -->
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="输入消息..." id="message-input">
+                        <button id="send-message">发送</button>
+                        <button id="show-history">历史</button>
+                        <button id="clear-chat">清空</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我 -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>关于我</h2>
+                <div class="about-content">
+                    <!-- 关于我的内容将通过JavaScript动态添加 -->
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript 依赖 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/lib/highlight.min.js"></script>
+    <!-- 自定义JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
